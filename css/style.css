@@ -63,12 +63,16 @@
     height: 2vh;
 }
 
+.language {
+    margin-bottom: 7vh;
+}
+
 .lang {
     border-left: black 0.2vw solid;
     border-top: black 0.2vw solid;
     border-bottom: black 0.2vw solid;
     height: auto;
-    width: 8vw;
+    width: 10vw;
     padding: 0.7vh 0.7vw;
     font-size: 1.5vw;
     margin-top: 4vh;
@@ -97,7 +101,7 @@
 }
 
 .page {
-    padding-left: 5vw;
+    padding-left: 3vw;
     padding-top: 10vh;
     float: left;
     width: 52vw;
