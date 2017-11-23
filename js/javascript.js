@@ -25,7 +25,7 @@ $(function() {
 
                 lang.innerText = key;
                 verbTitle.innerText = "Verb";
-                pronounTItle.innerText = "Pronoun";
+                pronounTitle.innerText = "Pronoun";
 
                 verb.appendChild(verbTitle);
                 pronoun.appendChild(pronounTitle);
