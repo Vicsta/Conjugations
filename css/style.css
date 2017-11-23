@@ -102,6 +102,8 @@
 }
 
 .page {
+    position: fixed;
+    left: 45vw;
     padding-left: 3vw;
     padding-top: 10vh;
     float: left;
