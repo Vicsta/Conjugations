@@ -1,33 +1,80 @@
 .topBar {
-    height: 7vh;
+    height: 10vh;
+    margin-top: 3vh;
 }
 
 .topName {
-    height: 100%;
-    line-height: 100%;
-    font-size: 4vw;
+    line-height: 10vh;
+    font-size: 5vw;
     color: blue;
     font-weight: bold;
+    margin-left: 5vw;
+    float: left;
+    margin-right: 10vw;
+    letter-spacing: 1vw;
+}
+
+.conjugator, .grammar, .resources {
+    float: left;
+    height: 6vh;
+    margin-top: 2vh;
+    line-height: 5vh;
+    border: solid black 0.2vw;
+    margin-left: 1vw;
+    font-size: 1.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .leftBar {
     overflow: hidden;
     float: left;
-    width: 40vw;
-    outline: 1px black solid;
+    width: 38vw;
+    margin-top: 3vh;
+    margin-left: 3vw;
 }
 
 .bound {
     float: left;
     border: black 0.2vw solid;
-    height: 10vh;
-    width: 20vw;
+    height: 20vh;
+    width: 30vw;
 }
 
 .lang, .verb{
     float: left;
+    height: 2vh;
+}
+
+.lang {
+    border-left: black 0.2vw solid;
+    border-top: black 0.2vw solid;
+    border-bottom: black 0.2vw solid;
+    height: auto;
+    width: 8vw;
+    padding: 0.7vh 0.7vw;
+    font-size: 1.5vw;
+    margin-top: 4vh;
+}
+
+.verb {
+    border-right: black 0.2vw solid;
+    height: 100%;
+    width: 16vw;
+    overflow-y: scroll;
+}
+
+.verbTitle, .pronounTitle {
+    height: 4vh;
+    line-height: 4vh;
+    font-size: 1.5vw;
+    border-bottom: black 0.2vw solid;
 }
 
 .pronoun {
     float: right;
+    border-left: black 0.2vw solid;
+    height: 100%;
+    width: 11vw;
+    overflow-y: scroll;
 }
