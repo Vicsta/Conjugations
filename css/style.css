@@ -179,4 +179,21 @@
 
 .accentsName {
     font-size: 2vw;
+    float: left;
+}
+
+.accents {
+    float: left;
+    width: 50%;
+}
+
+.accent {
+    border: black 0.2vw solid;
+    width: 2.5vw;
+    height: 2.5vw;
+    line-height: 2vw;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+    float: left;
+    font-size: 1.5vw;
 }
