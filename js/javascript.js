@@ -69,11 +69,17 @@ $(function() {
 
         document.getElementsByClassName("stop")[0].addEventListener('click', function() {
             clearInterval(timer);
+            computeScore();
+            time = 0;
         });
 
         /*
             END OF TIMER JAVASCRIPT
          */
+
+        function computeScore() {
+            
+        }
 
     } else {
         alert('The File APIs are not fully supported in this browser.');
