@@ -135,6 +135,22 @@
     float: right;
 }
 
+.start {
+    border-top-left-radius: 1vw;
+}
+
+.stop {
+    border-top-right-radius: 1vw;
+}
+
+.time {
+    border-bottom-left-radius: 1vw;
+}
+
+.score {
+    border-bottom-right-radius: 1vw;
+}
+
 .timeName {
     height: 6vh;
     float: left;
@@ -179,11 +195,12 @@
 
 .enter {
     float: left;
-    line-height: 6vh;
+    line-height: 5.3vh;
     width: 8vw;
     height: 6vh;
     font-size: 1.5vw;
     border: black 0.2vw solid;
+    border-radius: 1vw;
 }
 
 .accentsRow {
