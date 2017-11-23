@@ -3,6 +3,40 @@ $(function() {
         // Great success! All the File APIs are supported.
         $.getJSON( "Database.JSON", function( data ) {
             console.log(data);
+            for(var key in data["languages"]) {
+
+                if(!data["languages"].hasOwnProperty(key)) continue;
+
+                var language = document.createElement("div");
+                var lang = document.createElement("div");
+                var bound = document.createElement("div");
+                var verb = document.createElement("div");
+                var verbTitle = document.createElement("div");
+                var pronoun = document.createElement("div");
+                var pronounTitle = document.createElement("div");
+
+                language.className = "language";
+                lang.className = "lang text-center";
+                bound.className = "bound";
+                verb.className = "verb";
+                verbTitle.className = "verbTitle text-center";
+                pronoun.className = "pronoun";
+                pronounTitle.className = "pronounTitle text-center";
+
+                lang.innerText = key;
+                verbTitle.innerText = "Verb";
+                pronounTItle.innerText = "Pronoun";
+
+                verb.appendChild(verbTitle);
+                pronoun.appendChild(pronounTitle);
+                bound.appendChild(verb);
+                bound.appendChild(pronoun);
+                language.appendChild(lang);
+                language.appendChild(bound);
+
+                document.getElementsByClassName("leftBar")[0].appendChild(language);
+
+            }
         });
 
         /*
