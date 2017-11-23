@@ -1,0 +1,33 @@
+.topBar {
+    height: 7vh;
+}
+
+.topName {
+    height: 100%;
+    line-height: 100%;
+    font-size: 4vw;
+    color: blue;
+    font-weight: bold;
+}
+
+.leftBar {
+    overflow: hidden;
+    float: left;
+    width: 40vw;
+    outline: 1px black solid;
+}
+
+.bound {
+    float: left;
+    border: black 0.2vw solid;
+    height: 10vh;
+    width: 20vw;
+}
+
+.lang, .verb{
+    float: left;
+}
+
+.pronoun {
+    float: right;
+}
