@@ -6,12 +6,13 @@
 .topName {
     line-height: 10vh;
     font-size: 5vw;
-    color: blue;
+    color: skyblue;
     font-weight: bold;
     margin-left: 5vw;
     float: left;
     margin-right: 10vw;
     letter-spacing: 1vw;
+    text-shadow: -0.2vw 0 black, 0 0.2vw black, 0.2vw 0 black, 0 -0.2vw black;
 }
 
 .conjugator, .grammar, .resources {
