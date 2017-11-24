@@ -16,6 +16,7 @@ $(function() {
                 var bound = document.createElement("div");
                 var verb = document.createElement("div");
                 var verbTitle = document.createElement("div");
+                var verbType = document.createElement("div");
                 var pronoun = document.createElement("div");
                 var pronounTitle = document.createElement("div");
 
@@ -24,6 +25,7 @@ $(function() {
                 bound.className = "bound";
                 verb.className = "verb";
                 verbTitle.className = "verbTitle text-center";
+                verbType.className = "verbType";
                 pronoun.className = "pronoun";
                 pronounTitle.className = "pronounTitle text-center";
 
@@ -31,7 +33,59 @@ $(function() {
                 verbTitle.innerText = "Verb";
                 pronounTitle.innerText = "Pronoun";
 
+                for(var i = 0; i < data["languages"][key]["Tenses"]; i++) {
+                    var verbRow = document.createElement("div");
+                    var verbRowName = document.createElement("div");
+
+                    var checkboxRow = document.createElement("div");
+                    var checkboxBox = document.createElement("div");
+                    var checkbox = document.createElement("input");
+                    var checkboxText = document.createElement("div");
+
+                    verbRow.className = "verbRow";
+                    verbRowName.className = "verbRowName";
+                    checkboxRow.className = "checkboxRow";
+                    checkboxBox.className = "checkboxBox";
+                    checkboxText.className = "checkboxText";
+
+                    checkboxText.innerText = "Regular Verbs";
+                    verbRowName.innerText = data["languages"][key]["Tenses"][i];
+
+                    checkboxBox.appendChild(checkbox);
+
+                    checkboxRow.appendChild(checkboxBox);
+                    checkboxBox.appendChild(checkboxText);
+
+                    verbRow.appendChild(verbRowName);
+
+                    verbRow.appendChild(checkboxRow);
+
+                    checkboxRow = document.createElement("div");
+                    checkboxBox = document.createElement("div");
+                    checkbox = document.createElement("input");
+                    checkboxText = document.createElement("div");
+
+                    verbRow.className = "verbRow";
+                    verbRowName.className = "verbRowName";
+                    checkboxRow.className = "checkboxRow";
+                    checkboxBox.className = "checkboxBox";
+                    checkboxText.className = "checkboxText";
+
+                    checkboxText.innerText = "Irregular Verbs";
+
+                    checkboxBox.appendChild(checkbox);
+
+                    checkboxRow.appendChild(checkboxBox);
+                    checkboxBox.appendChild(checkboxText);
+
+                    verbRow.appendChild(checkboxRow);
+
+                    verbType.appendChild(verbRow);
+                }
+
                 verb.appendChild(verbTitle);
+                verb.appendChild(verbType);
+
                 pronoun.appendChild(pronounTitle);
                 bound.appendChild(verb);
                 bound.appendChild(pronoun);

@@ -1,16 +1,44 @@
 {
 	"languages": {
 		"Spanish": {
-			"Verb": [],
-			"Pronoun": ["Yo"]
+			"Verbs": {
+				"Regular": [],
+				"Irregular": []
+			},
+			"Tenses": ["Present", "Preterit", "Imperfect", "Perfect"],
+			"Pronouns": ["Yo", "Tú/Usted", "Él/Ella", "Nosotros/Nosotras", "Vosotros/Vosotras", "Ustedes/Ellos/Ellas"]
 		},
 		"French": {
+			"Verbs": {
+				"Regular": [],
+				"Irregular": []
+			},
+			"Tenses": ["Present", "Preterit", "Imperfect", "Perfect"],
+			"Pronouns": ["Yo", "Tú/Usted", "Él/Ella", "Nosotros/Nosotras", "Vosotros/Vosotras", "Ustedes/Ellos/Ellas"]
 		},
 		"Italian": {
+			"Verbs": {
+				"Regular": [],
+				"Irregular": []
+			},
+			"Tenses": ["Present", "Preterit", "Imperfect", "Perfect"],
+			"Pronouns": ["Yo", "Tú/Usted", "Él/Ella", "Nosotros/Nosotras", "Vosotros/Vosotras", "Ustedes/Ellos/Ellas"]
 		},
-		"Protuguese": {
+		"Portuguese": {
+			"Verbs": {
+				"Regular": [],
+				"Irregular": []
+			},
+			"Tenses": ["Present", "Preterit", "Imperfect", "Perfect"],
+			"Pronouns": ["Yo", "Tú/Usted", "Él/Ella", "Nosotros/Nosotras", "Vosotros/Vosotras", "Ustedes/Ellos/Ellas"]
 		},
 		"Romanian": {
+			"Verbs": {
+				"Regular": [],
+				"Irregular": []
+			},
+			"Tenses": ["Present", "Preterit", "Imperfect", "Perfect"],
+			"Pronouns": ["Yo", "Tú/Usted", "Él/Ella", "Nosotros/Nosotras", "Vosotros/Vosotras", "Ustedes/Ellos/Ellas"]
 		}
 	}
 }
