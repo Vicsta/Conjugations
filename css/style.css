@@ -46,7 +46,7 @@
 .leftBar {
     overflow: hidden;
     float: left;
-    width: 40vw;
+    width: 40.5vw;
     margin-top: 3vh;
     margin-left: 3vw;
 }
@@ -55,7 +55,7 @@
     float: left;
     border: black 0.2vw solid;
     height: 20vh;
-    width: 30vw;
+    width: 30.5vw;
 }
 
 .lang, .verb{
@@ -97,7 +97,7 @@
     float: right;
     border-left: black 0.2vw solid;
     height: 100%;
-    width: 11vw;
+    width: 13vw;
     overflow-y: scroll;
 }
 
@@ -228,4 +228,41 @@
     margin-bottom: 1vw;
     float: left;
     font-size: 1.5vw;
+}
+
+.personType {
+    padding: 1vh 0.5vw;
+}
+
+input[type=checkbox]
+{
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    padding: 10px;
+}
+
+.checkboxRow {
+    width: 100%;
+    float: left;
+    border-bottom: 0.1vw black solid;
+    margin-bottom: 1vh;
+}
+
+.checkboxtext, .checkboxBox {
+    float: left;
+}
+
+.checkboxBox {
+    margin-left: 0.3vw;
+    width: 10%;
+}
+
+.checkboxtext {
+    margin-left: 0.5vw;
+    width: 80%;
+    word-wrap: break-word;
+    font-size: 1vw;
 }
