@@ -56,7 +56,7 @@ $(function() {
                     checkboxBox.appendChild(checkbox);
 
                     checkboxRow.appendChild(checkboxBox);
-                    checkboxBox.appendChild(checkboxText);
+                    checkboxRow.appendChild(checkboxText);
 
                     verbRow.appendChild(verbRowName);
 
@@ -79,7 +79,7 @@ $(function() {
                     checkboxBox.appendChild(checkbox);
 
                     checkboxRow.appendChild(checkboxBox);
-                    checkboxBox.appendChild(checkboxText);
+                    checkboxRow.appendChild(checkboxText);
 
                     verbRow.appendChild(checkboxRow);
 
