@@ -117,10 +117,12 @@ $(function() {
                 pronoun.appendChild(pronounTitle);
                 pronoun.appendChild(personType);
 
-                lang.addEventListener('click', function() {
-                    console.log("clicked");
-                    $(bound).hide(2000);
-                });
+                (function() {
+                    lang.addEventListener('click', function () {
+                        console.log("clicked");
+                        $(bound).hide(2000);
+                    });
+                })();
 
                 bound.appendChild(verb);
                 bound.appendChild(pronoun);
