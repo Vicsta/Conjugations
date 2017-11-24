@@ -251,7 +251,7 @@ input[type=checkbox] {
     margin-bottom: 1vh;
 }
 
-.checkboxtext, .checkboxBox {
+.checkboxText, .checkboxBox {
     float: left;
 }
 
@@ -260,7 +260,7 @@ input[type=checkbox] {
     width: 10%;
 }
 
-.checkboxtext {
+.checkboxText {
     margin-left: 0.5vw;
     width: 80%;
     word-wrap: break-word;
