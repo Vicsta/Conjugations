@@ -91,6 +91,8 @@ $(function() {
                 verb.appendChild(verbTitle);
                 verb.appendChild(verbType);
 
+                console.log("trying");
+
                 for(var i = 0; i < data["languages"][key]["Pronouns"].length; i++) {
                     console.log(i);
                     var checkboxRow = document.createElement("div");
