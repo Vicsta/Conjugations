@@ -14,11 +14,14 @@ $(function() {
                 var language = document.createElement("div");
                 var lang = document.createElement("div");
                 var bound = document.createElement("div");
+
                 var verb = document.createElement("div");
                 var verbTitle = document.createElement("div");
                 var verbType = document.createElement("div");
+
                 var pronoun = document.createElement("div");
                 var pronounTitle = document.createElement("div");
+                var personType = document.createElement("div");
 
                 language.className = "language";
                 lang.className = "lang text-center";
@@ -59,7 +62,6 @@ $(function() {
                     checkboxRow.appendChild(checkboxText);
 
                     verbRow.appendChild(verbRowName);
-
                     verbRow.appendChild(checkboxRow);
 
                     checkboxRow = document.createElement("div");
@@ -89,7 +91,30 @@ $(function() {
                 verb.appendChild(verbTitle);
                 verb.appendChild(verbType);
 
+                for(var i = 0; i < data["languages"][key]["Pronouns"].length; i++) {
+                    var checkboxRow = document.createElement("div");
+                    var checkboxBox = document.createElement("div");
+                    var checkbox = document.createElement("input");
+                    var checkboxText = document.createElement("div");
+
+                    checkboxRow.className = "checkboxRow";
+                    checkboxBox.className = "checkboxBox";
+                    checkboxText.className = "checkboxText";
+
+                    checkboxText.innerText = data["languages"][key]["Pronouns"][i];
+                    checkbox.type = "checkbox";
+
+                    checkboxBox.appendChild(checkbox);
+
+                    checkboxRow.appendChild(checkboxBox);
+                    checkboxRow.appendChild(checkboxText);
+
+                    personType.appendChild(checkboxRow);
+                }
+
                 pronoun.appendChild(pronounTitle);
+                pronoun.appendChild(personType);
+
                 bound.appendChild(verb);
                 bound.appendChild(pronoun);
                 language.appendChild(lang);
