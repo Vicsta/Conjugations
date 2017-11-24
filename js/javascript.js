@@ -7,6 +7,10 @@ $(function() {
 
                 if(!data["languages"].hasOwnProperty(key)) continue;
 
+                /*
+                    READ FROM THE DATABASE TO CREATE LANGUAGE SECTIONS
+                 */
+
                 var language = document.createElement("div");
                 var lang = document.createElement("div");
                 var bound = document.createElement("div");
@@ -35,6 +39,10 @@ $(function() {
                 language.appendChild(bound);
 
                 document.getElementsByClassName("leftBar")[0].appendChild(language);
+
+                /*
+                    END OF DATABASE READ FOR LANGUAGE SECTIONS
+                 */
 
             }
         });
@@ -78,7 +86,7 @@ $(function() {
          */
 
         function computeScore() {
-            
+
         }
 
     } else {
