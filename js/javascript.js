@@ -29,8 +29,10 @@ $(function() {
                 verb.className = "verb";
                 verbTitle.className = "verbTitle text-center";
                 verbType.className = "verbType";
+
                 pronoun.className = "pronoun";
                 pronounTitle.className = "pronounTitle text-center";
+                personType.className = "personType";
 
                 lang.innerText = key;
                 verbTitle.innerText = "Verb";
