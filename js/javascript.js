@@ -33,7 +33,7 @@ $(function() {
                 verbTitle.innerText = "Verb";
                 pronounTitle.innerText = "Pronoun";
 
-                for(var i = 0; i < data["languages"][key]["Tenses"]; i++) {
+                for(var i = 0; i < data["languages"][key]["Tenses"].length; i++) {
                     var verbRow = document.createElement("div");
                     var verbRowName = document.createElement("div");
 
