@@ -42,6 +42,8 @@ $(function() {
                     var checkbox = document.createElement("input");
                     var checkboxText = document.createElement("div");
 
+                    verbRowName.innerText = data["languages"][key]["Tenses"][i];
+
                     verbRow.className = "verbRow";
                     verbRowName.className = "verbRowName";
                     checkboxRow.className = "checkboxRow";
@@ -49,7 +51,7 @@ $(function() {
                     checkboxText.className = "checkboxText";
 
                     checkboxText.innerText = "Regular Verbs";
-                    verbRowName.innerText = data["languages"][key]["Tenses"][i];
+                    checkbox.type = "checkbox";
 
                     checkboxBox.appendChild(checkbox);
 
@@ -72,6 +74,7 @@ $(function() {
                     checkboxText.className = "checkboxText";
 
                     checkboxText.innerText = "Irregular Verbs";
+                    checkbox.type = "checkbox";
 
                     checkboxBox.appendChild(checkbox);
 
