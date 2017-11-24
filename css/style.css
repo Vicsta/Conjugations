@@ -229,14 +229,13 @@
     font-size: 1.5vw;
 }
 
-.personType {
+.personType, .verbType {
     padding: 1vh 0.5vw;
     height: 15vh;
     overflow-y: scroll;
 }
 
-input[type=checkbox]
-{
+input[type=checkbox] {
     /* Double-sized Checkboxes */
     -ms-transform: scale(2); /* IE */
     -moz-transform: scale(2); /* FF */
@@ -266,4 +265,15 @@ input[type=checkbox]
     width: 80%;
     word-wrap: break-word;
     font-size: 1vw;
+}
+
+.verbRow > .checkboxRow{
+    margin-left: 2vw;
+    width: 10vw;
+}
+
+.verbRowName {
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-bottom: 0.5vh;
 }
