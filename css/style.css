@@ -98,7 +98,6 @@
     border-left: black 0.2vw solid;
     height: 100%;
     width: 13vw;
-    overflow-y: scroll;
 }
 
 .page {
@@ -232,6 +231,8 @@
 
 .personType {
     padding: 1vh 0.5vw;
+    height: 15vh;
+    overflow-y: scroll;
 }
 
 input[type=checkbox]

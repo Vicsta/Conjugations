@@ -86,7 +86,7 @@ $(function() {
          */
 
         function computeScore() {
-
+            console.log("nothing yay");
         }
 
     } else {
