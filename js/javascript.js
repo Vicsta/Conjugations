@@ -120,6 +120,10 @@ $(function() {
                 pronoun.appendChild(pronounTitle);
                 pronoun.appendChild(personType);
 
+                lang.addEventListener('click', function() {
+                    $(bound).hide(2000);
+                });
+
                 bound.appendChild(verb);
                 bound.appendChild(pronoun);
                 language.appendChild(lang);
