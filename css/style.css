@@ -46,16 +46,16 @@
 .leftBar {
     overflow: hidden;
     float: left;
-    width: 41.5vw;
+    width: 43.5vw;
     margin-top: 3vh;
-    margin-left: 3vw;
+    margin-left: 1vw;
 }
 
 .bound {
     float: left;
     border: black 0.2vw solid;
     height: 20vh;
-    width: 31.5vw;
+    width: 33.5vw;
     display: none;
 }
 
@@ -82,8 +82,7 @@
 .verb {
     border-right: black 0.2vw solid;
     height: 100%;
-    width: 16vw;
-    overflow-y: scroll;
+    width: 18vw;
 }
 
 .verbTitle, .pronounTitle {
