@@ -66,6 +66,8 @@ $(function() {
                         tenseType.appendChild(tenseTypeBox);
                         tenseType.appendChild(tenseTypeName);
 
+                        setAllCheck(tenseTypeBox);
+
                         for(var i = 0; i < data["languages"][key]["Tenses"][tenseN][tenseTypeN].length; i++) {
                             var tenseTypeOptions = document.createElement("div");
                             var tenseTypeOptionsName = document.createElement("div");
@@ -85,6 +87,7 @@ $(function() {
 
                         tense.appendChild(tenseType);
                         setHide(tenseName, tenseType);
+                        setAllCheck(tenseBox);
                     }
 
                     verbType.appendChild(tense);
@@ -134,6 +137,22 @@ $(function() {
             button.addEventListener('click', function() {
                 console.log("clicked " + button.innerText);
                $(content).toggle(1000);
+            });
+        }
+
+        function setAllCheck(checkbox) {
+            checkbox.addEventListener( 'change', function() {
+                if(this.checked) {
+                    console.log(this.nextSibling.nextSibling);
+                    for(var i = 0; i < checkbox.childNodes.length; i+= 2) {
+
+                    }
+                } else {
+                    console.log(this.nextSibling.nextSibling);
+                    for(i = 0; i < checkbox.childNodes.length; i+= 2) {
+
+                    }
+                }
             });
         }
 
