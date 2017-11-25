@@ -134,7 +134,9 @@ $(function() {
 
                 var languages = document.getElementsByClassName("leftBar")[0];
 
+                console.log("going in loop");
                 for (i = 0; i < languages.length; i += 2) {
+                    console.log(i);
                     languages.childNodes[i].addEventListener('click', function () {
                         console.log("click");
                         languages.childNodes[i + 1].hide(2000);
