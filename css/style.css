@@ -54,7 +54,7 @@
 .bound {
     float: left;
     border: black 0.2vw solid;
-    height: 20vh;
+    height: 25vh;
     width: 33.5vw;
     display: none;
 }
@@ -65,7 +65,7 @@
 }
 
 .language {
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
     overflow: hidden;
 }
 
