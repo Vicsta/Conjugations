@@ -100,13 +100,11 @@ $(function() {
                     var checkboxText = document.createElement("div");
 
                     checkboxRow.className = "checkboxRow";
-                    checkboxBox.className = "checkboxBox";
                     checkboxText.className = "checkboxText";
 
                     checkboxText.innerText = data["languages"][key]["Pronouns"][i];
                     checkbox.type = "checkbox";
-
-                    checkboxBox.appendChild(checkbox);
+                    checkbox.className = "checkboxBox";
 
                     checkboxRow.appendChild(checkboxBox);
                     checkboxRow.appendChild(checkboxText);

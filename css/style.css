@@ -267,17 +267,6 @@ input[type=checkbox] {
     font-size: 1vw;
 }
 
-.verbRow > .checkboxRow{
-    margin-left: 2vw;
-    width: 10vw;
-}
-
-.verbRowName {
-    font-size: 1.5vw;
-    font-weight: bold;
-    margin-bottom: 0.5vh;
-}
-
 .tense {
     font-size: 1vw;
 }
