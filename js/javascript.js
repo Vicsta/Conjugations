@@ -143,14 +143,18 @@ $(function() {
         function setAllCheck(checkbox) {
             checkbox.addEventListener( 'change', function() {
                 if(this.checked) {
-                    console.log(this.nextSibling.nextSibling);
-                    for(var i = 0; i < checkbox.childNodes.length; i+= 2) {
-
+                    var cur = this.nextSibling.nextSibling;
+                    while(cur) {
+                        console.log(cur);
+                        cur.childNodes[0].checked = true;
+                        cur = cur.nextSibling;
                     }
                 } else {
-                    console.log(this.nextSibling.nextSibling);
-                    for(i = 0; i < checkbox.childNodes.length; i+= 2) {
-
+                    cur = this.nextSibling.nextSibling;
+                    while(cur) {
+                        console.log(cur);
+                        cur.childNodes[0].checked = false;
+                        cur = cur.nextSibling;
                     }
                 }
             });
