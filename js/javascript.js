@@ -41,9 +41,10 @@ $(function() {
                 for(var tenseN in data["languages"][key]["Tenses"]) {
                     var tense = document.createElement("div");
                     var tenseName = document.createElement("div");
-                    var tenseBox = document.createElement("div");
+                    var tenseBox = document.createElement("input");
 
-                    tenseBox.className = "checkbox";
+                    tenseBox.className = "checkboxBox";
+                    tenseBox.type = "checkbox";
 
                     tense.className = "tense";
                     tenseName.innerText = tenseN;
@@ -53,9 +54,10 @@ $(function() {
                     for(var tenseTypeN in data["languages"][key]["Tenses"][tenseN]) {
                         var tenseType = document.createElement("div");
                         var tenseTypeName = document.createElement("div");
-                        var tenseTypeBox = document.createElement("div");
+                        var tenseTypeBox = document.createElement("input");
 
-                        tenseTypeBox.className = "checkbox";
+                        tenseTypeBox.className = "checkboxBox";
+                        tenseTypeBox.type = "checkbox";
 
                         tenseType.className = "tenseType";
                         tenseTypeName.innerText = tenseTypeN;
@@ -65,9 +67,10 @@ $(function() {
                         for(var i = 0; i < data["languages"][key]["Tenses"][tenseN][tenseTypeN].length; i++) {
                             var tenseTypeOptions = document.createElement("div");
                             var tenseTypeOptionsName = document.createElement("div");
-                            var tenseTypeOptionsBox = document.createElement("div");
+                            var tenseTypeOptionsBox = document.createElement("input");
 
-                            tenseTypeOptionsBox.className = "checkbox";
+                            tenseTypeOptionsBox.className = "checkboxBox";
+                            tenseTypeOptionsBox.type = "checkbox";
 
                             tenseTypeOptions.className = "tenseTypeOptions";
                             tenseTypeOptionsName.innerText =  data["languages"][key]["Tenses"][tenseN][tenseTypeN][i];
