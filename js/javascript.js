@@ -136,6 +136,7 @@ $(function() {
 
                 for (i = 0; i < languages.length; i += 2) {
                     languages.childNodes[i].addEventListener('click', function () {
+                        console.log("click");
                         languages.childNodes[i + 1].hide(2000);
                     });
                 }
