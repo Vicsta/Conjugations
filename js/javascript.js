@@ -41,25 +41,37 @@ $(function() {
                 for(var tenseN in data["languages"][key]["Tenses"]) {
                     var tense = document.createElement("div");
                     var tenseName = document.createElement("div");
+                    var tenseBox = document.createElement("div");
+
+                    tenseBox.className = "checkbox";
 
                     tense.className = "tense";
                     tenseName.innerText = tenseN;
+                    tense.appendChild(tenseBox);
                     tense.appendChild(tenseName);
 
                     for(var tenseTypeN in data["languages"][key]["Tenses"][tenseN]) {
                         var tenseType = document.createElement("div");
                         var tenseTypeName = document.createElement("div");
+                        var tenseTypeBox = document.createElement("div");
+
+                        tenseTypeBox.className = "checkbox";
 
                         tenseType.className = "tenseType";
                         tenseTypeName.innerText = tenseTypeN;
+                        tenseType.appendChild(tenseTypeBox);
                         tenseType.appendChild(tenseTypeName);
 
                         for(var i = 0; i < data["languages"][key]["Tenses"][tenseN][tenseTypeN].length; i++) {
                             var tenseTypeOptions = document.createElement("div");
                             var tenseTypeOptionsName = document.createElement("div");
+                            var tenseTypeOptionsBox = document.createElement("div");
+
+                            tenseTypeOptionsBox.className = "checkbox";
 
                             tenseTypeOptions.className = "tenseTypeOptions";
                             tenseTypeOptionsName.innerText =  data["languages"][key]["Tenses"][tenseN][tenseTypeN][i];
+                            tenseTypeOptions.appendChild(tenseTypeOptionsBox);
                             tenseTypeOptions.appendChild(tenseTypeOptionsName);
 
                             tenseType.appendChild(tenseTypeOptions);
