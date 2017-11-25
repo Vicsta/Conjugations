@@ -95,7 +95,6 @@ $(function() {
 
                 for(i = 0; i < data["languages"][key]["Pronouns"].length; i++) {
                     var checkboxRow = document.createElement("div");
-                    var checkboxBox = document.createElement("div");
                     var checkbox = document.createElement("input");
                     var checkboxText = document.createElement("div");
 
@@ -106,7 +105,7 @@ $(function() {
                     checkbox.type = "checkbox";
                     checkbox.className = "checkboxBox";
 
-                    checkboxRow.appendChild(checkboxBox);
+                    checkboxRow.appendChild(checkbox);
                     checkboxRow.appendChild(checkboxText);
 
                     personType.appendChild(checkboxRow);
