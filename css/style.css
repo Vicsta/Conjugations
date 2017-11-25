@@ -282,10 +282,13 @@ input[type=checkbox] {
     text-decoration: underline;
 }
 
+.tenseType {
+    display: none;
+}
+
 .tenseTypeName {
     font-size: 1vw;
     margin-bottom: 0.5vh;
-    display: none;
 }
 
 .tenseTypeOptionsName {
