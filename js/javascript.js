@@ -93,11 +93,11 @@ $(function() {
                 verb.appendChild(verbTitle);
                 verb.appendChild(verbType);
 
-                for(var i = 0; i < data["languages"][key]["Pronouns"].length; i++) {
-                    var checkboxRow = document.createElement("div");
-                    var checkboxBox = document.createElement("div");
-                    var checkbox = document.createElement("input");
-                    var checkboxText = document.createElement("div");
+                for(i = 0; i < data["languages"][key]["Pronouns"].length; i++) {
+                    checkboxRow = document.createElement("div");
+                    checkboxBox = document.createElement("div");
+                    checkbox = document.createElement("input");
+                    checkboxText = document.createElement("div");
 
                     checkboxRow.className = "checkboxRow";
                     checkboxBox.className = "checkboxBox";
@@ -117,13 +117,6 @@ $(function() {
                 pronoun.appendChild(pronounTitle);
                 pronoun.appendChild(personType);
 
-                (function() {
-                    lang.addEventListener('click', function () {
-                        console.log("clicked");
-                        $(bound).hide(2000);
-                    });
-                })();
-
                 bound.appendChild(verb);
                 bound.appendChild(pronoun);
                 language.appendChild(lang);
@@ -136,6 +129,18 @@ $(function() {
                  */
 
             }
+
+            (function() {
+
+                var languages = document.getElementsByClassName("leftBar")[0];
+
+                for (i = 0; i < languages.length; i += 2) {
+                    languages.childNodes[i].addEventListener('click', function () {
+                        languages.childNodes[i + 1].hide(2000);
+                    });
+                }
+
+            })();
         });
 
         /*
