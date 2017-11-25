@@ -241,6 +241,7 @@ input[type=checkbox] {
     -webkit-transform: scale(2); /* Safari and Chrome */
     -o-transform: scale(2); /* Opera */
     padding: 10px;
+    cursor: pointer;
 }
 
 .checkboxRow {
@@ -274,11 +275,17 @@ input[type=checkbox] {
     font-weight: bold;
     font-size: 1vw;
     margin-bottom: 0.5vh;
+    cursor: pointer;
+}
+
+.tenseName:hover {
+    text-decoration: underline;
 }
 
 .tenseTypeName {
     font-size: 1vw;
     margin-bottom: 0.5vh;
+    display: none;
 }
 
 .tenseTypeOptionsName {
