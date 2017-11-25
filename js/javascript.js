@@ -117,6 +117,8 @@ $(function() {
                 pronoun.appendChild(pronounTitle);
                 pronoun.appendChild(personType);
 
+                setHide(lang, bound);
+
                 bound.appendChild(verb);
                 bound.appendChild(pronoun);
                 language.appendChild(lang);
@@ -129,22 +131,14 @@ $(function() {
                  */
 
             }
-
-            (function() {
-
-                var languages = document.getElementsByClassName("leftBar")[0];
-
-                console.log("going in loop");
-                for (i = 0; i < languages.length; i += 2) {
-                    console.log(i);
-                    languages.childNodes[i].addEventListener('click', function () {
-                        console.log("click");
-                        languages.childNodes[i + 1].hide(2000);
-                    });
-                }
-
-            })();
         });
+
+        function setHide(button, content) {
+            console.log(button + " " + content);
+            button.addEventListener('click', function() {
+               $(content).hide(2000);
+            });
+        }
 
         /*
             JAVASCRIPT TO HANDLE TIMER, MEASURED IN CENTISECONDS
