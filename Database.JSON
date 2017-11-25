@@ -5,7 +5,14 @@
 				"Regular": [],
 				"Irregular": []
 			},
-			"Tenses": ["Present", "Preterit", "Imperfect", "Perfect"],
+			"Tenses": {
+				"Indicative Simple Tenses": {
+					"Present Tense": ["Regular Verbs"],
+					"Imperfect Tense": []
+				},
+				"Imperative": {
+				}
+			},
 			"Pronouns": ["Yo", "Tú/Usted", "Él/Ella", "Nosotros/Nosotras", "Vosotros/Vosotras", "Ustedes/Ellos/Ellas"]
 		},
 		"French": {

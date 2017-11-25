@@ -38,66 +38,47 @@ $(function() {
                 verbTitle.innerText = "Verb";
                 pronounTitle.innerText = "Pronoun";
 
-                for(var i = 0; i < data["languages"][key]["Tenses"].length; i++) {
-                    var verbRow = document.createElement("div");
-                    var verbRowName = document.createElement("div");
+                for(var tenseN in data["languages"][key]["Tenses"]) {
+                    var tense = document.createElement("div");
+                    var tenseName = document.createElement("div");
 
-                    var checkboxRow = document.createElement("div");
-                    var checkboxBox = document.createElement("div");
-                    var checkbox = document.createElement("input");
-                    var checkboxText = document.createElement("div");
+                    tenseName.innerText = tenseN;
 
-                    verbRowName.innerText = data["languages"][key]["Tenses"][i];
+                    for(var tenseTypeN in data["languages"][key]["Tenses"][tenseN]) {
+                        var tenseType = document.createElement("div");
+                        var tenseTypeName = document.createElement("div");
 
-                    verbRow.className = "verbRow";
-                    verbRowName.className = "verbRowName";
-                    checkboxRow.className = "checkboxRow";
-                    checkboxBox.className = "checkboxBox";
-                    checkboxText.className = "checkboxText";
+                        tenseTypeName.innerText = tenseTypeN;
 
-                    checkboxText.innerText = "Regular Verbs";
-                    checkbox.type = "checkbox";
+                        tenseType.appendChild(tenseTypeName);
 
-                    checkboxBox.appendChild(checkbox);
+                        for(var i = 0; i < data["languages"][key]["Tenses"][tenseN][tenseTypeN].length; i++) {
+                            var tenseTypeOptions = document.createElement("div");
+                            var tenseTypeOptionsName = document.createElement("div");
 
-                    checkboxRow.appendChild(checkboxBox);
-                    checkboxRow.appendChild(checkboxText);
+                            tenseTypeOptionsName.innerText =  data["languages"][key]["Tenses"][tenseN][tenseTypeN][i];
 
-                    verbRow.appendChild(verbRowName);
-                    verbRow.appendChild(checkboxRow);
+                            tenseTypeOptions.appendChild(tenseTypeOptionsName);
 
-                    checkboxRow = document.createElement("div");
-                    checkboxBox = document.createElement("div");
-                    checkbox = document.createElement("input");
-                    checkboxText = document.createElement("div");
+                            tenseType.appendChild(tenseTypeOptions);
+                        }
 
-                    verbRow.className = "verbRow";
-                    verbRowName.className = "verbRowName";
-                    checkboxRow.className = "checkboxRow";
-                    checkboxBox.className = "checkboxBox";
-                    checkboxText.className = "checkboxText";
+                        tense.appendChild(tenseType);
 
-                    checkboxText.innerText = "Irregular Verbs";
-                    checkbox.type = "checkbox";
+                    }
 
-                    checkboxBox.appendChild(checkbox);
-
-                    checkboxRow.appendChild(checkboxBox);
-                    checkboxRow.appendChild(checkboxText);
-
-                    verbRow.appendChild(checkboxRow);
-
-                    verbType.appendChild(verbRow);
+                    tense.appendChild(tenseType);
+                    verbType.appendChild(tense);
                 }
 
                 verb.appendChild(verbTitle);
                 verb.appendChild(verbType);
 
                 for(i = 0; i < data["languages"][key]["Pronouns"].length; i++) {
-                    checkboxRow = document.createElement("div");
-                    checkboxBox = document.createElement("div");
-                    checkbox = document.createElement("input");
-                    checkboxText = document.createElement("div");
+                    var checkboxRow = document.createElement("div");
+                    var checkboxBox = document.createElement("div");
+                    var checkbox = document.createElement("input");
+                    var checkboxText = document.createElement("div");
 
                     checkboxRow.className = "checkboxRow";
                     checkboxBox.className = "checkboxBox";
