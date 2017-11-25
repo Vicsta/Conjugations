@@ -230,7 +230,7 @@
 
 .personType, .verbType {
     padding: 1vh 0.5vw;
-    height: 15vh;
+    height: 21vh;
     overflow-y: scroll;
 }
 
