@@ -42,31 +42,30 @@ $(function() {
                     var tense = document.createElement("div");
                     var tenseName = document.createElement("div");
 
+                    tense.className = "tense";
                     tenseName.innerText = tenseN;
-
                     tense.appendChild(tenseName);
 
                     for(var tenseTypeN in data["languages"][key]["Tenses"][tenseN]) {
                         var tenseType = document.createElement("div");
                         var tenseTypeName = document.createElement("div");
 
+                        tenseType.className = "tenseType";
                         tenseTypeName.innerText = tenseTypeN;
-
                         tenseType.appendChild(tenseTypeName);
 
                         for(var i = 0; i < data["languages"][key]["Tenses"][tenseN][tenseTypeN].length; i++) {
                             var tenseTypeOptions = document.createElement("div");
                             var tenseTypeOptionsName = document.createElement("div");
 
+                            tenseTypeOptions.className = "tenseTypeOptions";
                             tenseTypeOptionsName.innerText =  data["languages"][key]["Tenses"][tenseN][tenseTypeN][i];
-
                             tenseTypeOptions.appendChild(tenseTypeOptionsName);
 
                             tenseType.appendChild(tenseTypeOptions);
                         }
 
                         tense.appendChild(tenseType);
-
                     }
 
                     verbType.appendChild(tense);
