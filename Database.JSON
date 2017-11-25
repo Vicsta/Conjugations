@@ -7,8 +7,28 @@
 			},
 			"Tenses": {
 				"Indicative Simple Tenses": {
-					"Present Tense": ["Regular Verbs"],
-					"Imperfect Tense": []
+					"Present Tense": ["Regular Verbs", "Reflexive Verbs", "Stem-Changing Verbs", "Spell-Changing Verbs", "Irregular in the 'Yo' form", "Irregular Verbs"],
+					"Preterit Tense": ["Regular Verbs", "Stem/Spell-Changing Verbs", "Irregular Verbs"],
+					"Imperfect Tense": [],
+					"Future Tense": [],
+					"Conditional Tense": []
+				},
+				"Indicative Compound Tenses": {
+					"Regular Particles": [],
+					"Irregular Particles": [],
+					"Present Perfect": [],
+					"Future Perfect": [],
+					"Pluperfect": [],
+					"Conditional Perfect": [],
+					"Present Progressive": [],
+					"Past Progressive": []
+				},
+				"Subjunctive": {
+					"Present Subjunctive": [],
+					"Imperfect Subjunctive (Ra)": [],
+					"Imperfect Subjunctive (Se)": [],
+					"Present Perfect Subjunctive": [],
+					"Pluperfect Subjunctive (Ra)": []
 				},
 				"Imperative": {
 				}
@@ -20,7 +40,8 @@
 				"Regular": [],
 				"Irregular": []
 			},
-			"Tenses": ["Present", "Preterit", "Imperfect", "Perfect"],
+			"Tenses": {
+			},
 			"Pronouns": ["Yo", "Tú/Usted", "Él/Ella", "Nosotros/Nosotras", "Vosotros/Vosotras", "Ustedes/Ellos/Ellas"]
 		},
 		"Italian": {
@@ -28,7 +49,8 @@
 				"Regular": [],
 				"Irregular": []
 			},
-			"Tenses": ["Present", "Preterit", "Imperfect", "Perfect"],
+			"Tenses": {
+			},
 			"Pronouns": ["Yo", "Tú/Usted", "Él/Ella", "Nosotros/Nosotras", "Vosotros/Vosotras", "Ustedes/Ellos/Ellas"]
 		},
 		"Portuguese": {
@@ -36,7 +58,8 @@
 				"Regular": [],
 				"Irregular": []
 			},
-			"Tenses": ["Present", "Preterit", "Imperfect", "Perfect"],
+			"Tenses": {
+			},
 			"Pronouns": ["Yo", "Tú/Usted", "Él/Ella", "Nosotros/Nosotras", "Vosotros/Vosotras", "Ustedes/Ellos/Ellas"]
 		},
 		"Romanian": {
@@ -44,7 +67,8 @@
 				"Regular": [],
 				"Irregular": []
 			},
-			"Tenses": ["Present", "Preterit", "Imperfect", "Perfect"],
+			"Tenses": {
+			},
 			"Pronouns": ["Yo", "Tú/Usted", "Él/Ella", "Nosotros/Nosotras", "Vosotros/Vosotras", "Ustedes/Ellos/Ellas"]
 		}
 	}

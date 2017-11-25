@@ -279,13 +279,24 @@ input[type=checkbox] {
 }
 
 .tense {
-
+    font-size: 1vw;
 }
 
-.tenseType {
-    margin-left: 1vw;
+.tenseName {
+    font-weight: bold;
+    font-size: 1vw;
+    margin-bottom: 0.5vh;
 }
 
-.tenseTypeOptions {
+.tenseTypeName {
+    font-size: 1vw;
+    margin-bottom: 0.5vh;
+}
+
+.tenseTypeOptionsName {
+    font-size: 1vw;
+}
+
+.tenseType, .tenseTypeOptions {
     margin-left: 1vw;
 }
