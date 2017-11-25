@@ -84,10 +84,10 @@ $(function() {
                         }
 
                         tense.appendChild(tenseType);
+                        setHide(tenseName, tenseType);
                     }
 
                     verbType.appendChild(tense);
-                    setHide(tenseName, tenseType);
                 }
 
                 verb.appendChild(verbTitle);
