@@ -47,6 +47,7 @@ $(function() {
                     tenseBox.type = "checkbox";
 
                     tense.className = "tense";
+                    tenseName.className = "tenseName";
                     tenseName.innerText = tenseN;
                     tense.appendChild(tenseBox);
                     tense.appendChild(tenseName);
@@ -60,6 +61,7 @@ $(function() {
                         tenseTypeBox.type = "checkbox";
 
                         tenseType.className = "tenseType";
+                        tenseTypeName.className = "tenseTypeName";
                         tenseTypeName.innerText = tenseTypeN;
                         tenseType.appendChild(tenseTypeBox);
                         tenseType.appendChild(tenseTypeName);
@@ -73,6 +75,7 @@ $(function() {
                             tenseTypeOptionsBox.type = "checkbox";
 
                             tenseTypeOptions.className = "tenseTypeOptions";
+                            tenseTypeOptionsName.className = "tenseTypeOptionsName";
                             tenseTypeOptionsName.innerText =  data["languages"][key]["Tenses"][tenseN][tenseTypeN][i];
                             tenseTypeOptions.appendChild(tenseTypeOptionsBox);
                             tenseTypeOptions.appendChild(tenseTypeOptionsName);
