@@ -136,7 +136,7 @@ $(function() {
         function setHide(button, content) {
             console.log(button + " " + content);
             button.addEventListener('click', function() {
-               $(content).hide(2000);
+               $(content).toggle(2000);
             });
         }
 
