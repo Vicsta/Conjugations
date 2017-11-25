@@ -87,6 +87,7 @@ $(function() {
                     }
 
                     verbType.appendChild(tense);
+                    setHide(tense, tenseType);
                 }
 
                 verb.appendChild(verbTitle);
