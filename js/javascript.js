@@ -44,6 +44,8 @@ $(function() {
 
                     tenseName.innerText = tenseN;
 
+                    tense.appendChild(tenseName);
+
                     for(var tenseTypeN in data["languages"][key]["Tenses"][tenseN]) {
                         var tenseType = document.createElement("div");
                         var tenseTypeName = document.createElement("div");
@@ -67,7 +69,6 @@ $(function() {
 
                     }
 
-                    tense.appendChild(tenseType);
                     verbType.appendChild(tense);
                 }
 
