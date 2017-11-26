@@ -135,16 +135,15 @@ $(function() {
 
         function setHide(button, content) {
             button.addEventListener('click', function() {
-                console.log("clicked " + button.innerText);
                $(content).toggle(1000);
             });
         }
 
         function setAllCheck(checkbox) {
             checkbox.addEventListener('click', function() {
-                console.log("click " + checkbox);
                 if(this.checked) {
                     change(this, true);
+                    checkAll(this);
                 } else {
                     change(this, false);
                     upCasc(this);
@@ -162,12 +161,23 @@ $(function() {
         }
 
         function upCasc(checkbox) {
-            if(checkbox && (checkbox.type = "checkbox") && (checkbox.parentNode.className !== "tense")) {
-                console.log(checkbox.parentNode.parentNode.firstChild);
-                console.log(checkbox.parentNode.previousSibling.previousSibling.checked);
+            if(checkbox && (checkbox.parentNode.className !== "tense")) {
                 checkbox.parentNode.parentNode.firstChild.checked = false;
-                console.log(checkbox.parentNode.previousSibling.previousSibling.checked);
                 upCasc(checkbox.parentNode.parentNode.firstChild);
+            }
+        }
+
+        function checkAll(checkbox) {
+            var all = true;
+            var parent = checkbox.parentNode.parentNode;
+            for(var i = 2; i < parent.childNodes.length; i++) {
+                if(parent.childNodes[i].firstChild.checked = false) {
+                    all = false;
+                }
+            }
+            if(all) {
+                parent.firstChild.checked = true;
+                checkAll(parent.firstChild);
             }
         }
 
