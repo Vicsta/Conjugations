@@ -84,11 +84,11 @@ $(function() {
                             tenseType.appendChild(tenseTypeOptions);
                         }
 
+                        setHide(tenseName, tenseType);
                         setAllCheck(tenseTypeBox);
                         tense.appendChild(tenseType);
                     }
 
-                    setHide(tenseName, tenseType);
                     setAllCheck(tenseBox);
                     verbType.appendChild(tense);
                 }
