@@ -162,7 +162,7 @@ $(function() {
         }
 
         function upCasc(checkbox) {
-            if(checkbox && (checkbox.type = "checkbox")) {
+            if(checkbox && (checkbox.type = "checkbox") && (checkbox.parentNode.className !== "tense")) {
                 console.log(checkbox.parentNode.previousSibling.previousSibling);
                 checkbox.parentNode.previousSibling.previousSibling.checked = false;
                 upCasc(checkbox.parentNode.previousSibling.previousSibling);
