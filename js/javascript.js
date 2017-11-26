@@ -163,6 +163,7 @@ $(function() {
 
         function upCasc(checkbox) {
             if(checkbox && (checkbox.type = "checkbox")) {
+                console.log(checkbox.parentNode.previousSibling.previousSibling);
                 checkbox.parentNode.previousSibling.previousSibling.checked = false;
                 upCasc(checkbox.parentNode.previousSibling.previousSibling);
             }
