@@ -174,7 +174,7 @@ $(function() {
                 console.log(parent);
                 console.log(parent.childNodes.length);
                 for (var i = 2; i < parent.childNodes.length; i++) {
-                    if (parent.childNodes[i].firstChild.checked = false) {
+                    if (!parent.childNodes[i].firstChild.checked) {
                         all = false;
                     }
                 }
