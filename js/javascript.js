@@ -171,17 +171,13 @@ $(function() {
             if(checkbox && (checkbox.parentNode.className !== "tense")) {
                 var all = true;
                 var parent = checkbox.parentNode.parentNode;
-                console.log(parent);
-                console.log(parent.childNodes.length);
                 for (var i = 2; i < parent.childNodes.length; i++) {
                     if (!parent.childNodes[i].firstChild.checked) {
                         all = false;
                     }
                 }
-                console.log(all);
                 if (all) {
                     parent.firstChild.checked = true;
-                    console.log(parent.firstChild);
                     checkAll(parent.firstChild);
                 }
             }
