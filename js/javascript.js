@@ -172,11 +172,13 @@ $(function() {
                 var all = true;
                 var parent = checkbox.parentNode.parentNode;
                 console.log(parent);
+                console.log(parent.childNodes.length);
                 for (var i = 2; i < parent.childNodes.length; i++) {
                     if (parent.childNodes[i].firstChild.checked = false) {
                         all = false;
                     }
                 }
+                console.log(all);
                 if (all) {
                     parent.firstChild.checked = true;
                     checkAll(parent.firstChild);
