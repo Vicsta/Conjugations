@@ -164,7 +164,9 @@ $(function() {
         function upCasc(checkbox) {
             if(checkbox && (checkbox.type = "checkbox") && (checkbox.parentNode.className !== "tense")) {
                 console.log(checkbox.parentNode.previousSibling.previousSibling);
+                console.log(checkbox.parentNode.previousSibling.previousSibling.checked);
                 checkbox.parentNode.previousSibling.previousSibling.checked = false;
+                console.log(checkbox.parentNode.previousSibling.previousSibling.checked);
                 upCasc(checkbox.parentNode.previousSibling.previousSibling);
             }
         }
