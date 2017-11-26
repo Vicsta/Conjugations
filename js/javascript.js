@@ -181,6 +181,7 @@ $(function() {
                 console.log(all);
                 if (all) {
                     parent.firstChild.checked = true;
+                    console.log(parent.firstChild);
                     checkAll(parent.firstChild);
                 }
             }
