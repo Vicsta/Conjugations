@@ -146,13 +146,13 @@ $(function() {
                 if(this.checked) {
                     var cur = this.nextSibling.nextSibling;
                     while(cur) {
-                        cur.childNodes[0].checked = true;
+                        $(cur.childNodes[0].checked).prop("checked", true).change()
                         cur = cur.nextSibling;
                     }
                 } else {
                     cur = this.nextSibling.nextSibling;
                     while(cur) {
-                        cur.childNodes[0].checked = false;
+                        $(cur.childNodes[0].checked).prop("checked", false).change();
                         cur = cur.nextSibling;
                     }
                 }
