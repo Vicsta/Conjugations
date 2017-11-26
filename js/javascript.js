@@ -147,7 +147,7 @@ $(function() {
                     change(this, true);
                 } else {
                     change(this, false);
-                    //upCasc(this);
+                    upCasc(this);
                 }
             });
         }
