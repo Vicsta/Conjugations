@@ -141,7 +141,7 @@ $(function() {
         }
 
         function setAllCheck(checkbox) {
-            checkbox.addEventListener('change', function() {
+            checkbox.addEventListener('click', function() {
                 console.log(checkbox);
                 if(this.checked) {
                     var cur = this.nextSibling.nextSibling;
@@ -158,9 +158,6 @@ $(function() {
                         cur = cur.nextSibling;
                     }
                 }
-            });
-            checkbox.addEventListener('click', function () {
-                console.log("testing " + this);
             });
         }
 
