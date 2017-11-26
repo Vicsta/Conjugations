@@ -41,6 +41,9 @@
 				"Irregular": []
 			},
 			"Tenses": {
+				"test": {
+					"test2" : ["test3"]
+				}
 			},
 			"Pronouns": ["Yo", "Tú/Usted", "Él/Ella", "Nosotros/Nosotras", "Vosotros/Vosotras", "Ustedes/Ellos/Ellas"]
 		},

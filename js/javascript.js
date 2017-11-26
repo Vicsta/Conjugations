@@ -142,17 +142,16 @@ $(function() {
 
         function setAllCheck(checkbox) {
             checkbox.addEventListener( 'change', function() {
+                console.log(checkbox);
                 if(this.checked) {
                     var cur = this.nextSibling.nextSibling;
                     while(cur) {
-                        console.log(cur);
                         cur.childNodes[0].checked = true;
                         cur = cur.nextSibling;
                     }
                 } else {
                     cur = this.nextSibling.nextSibling;
                     while(cur) {
-                        console.log(cur);
                         cur.childNodes[0].checked = false;
                         cur = cur.nextSibling;
                     }
