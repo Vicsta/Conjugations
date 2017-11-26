@@ -170,6 +170,7 @@ $(function() {
         function checkAll(checkbox) {
             var all = true;
             var parent = checkbox.parentNode.parentNode;
+            console.log(parent);
             for(var i = 2; i < parent.childNodes.length; i++) {
                 if(parent.childNodes[i].firstChild.checked = false) {
                     all = false;
