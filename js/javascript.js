@@ -144,21 +144,20 @@ $(function() {
             checkbox.addEventListener('click', function() {
                 console.log(checkbox);
                 if(this.checked) {
-                    var cur = this.nextSibling.nextSibling;
-                    while(cur) {
-                        cur.childNodes[0].checked = true;
-                        $(cur.childNodes[0]).trigger('change');
-                        cur = cur.nextSibling;
-                    }
+                    change(this, true);
                 } else {
-                    cur = this.nextSibling.nextSibling;
-                    while(cur) {
-                        cur.childNodes[0].checked = false;
-                        $(cur.childNodes[0]).trigger('change');
-                        cur = cur.nextSibling;
-                    }
+                    change(this, false);
                 }
             });
+        }
+
+        function change(box, to) {
+            var cur = box.nextSibling.nextSibling;
+            while(cur) {
+                cur.childNodes[0].checked = to;
+                change(cur.childNodes[0], to);
+                cur = cur.nextSibling;
+            }
         }
 
         /*
