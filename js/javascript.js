@@ -142,7 +142,7 @@ $(function() {
 
         function setAllCheck(checkbox) {
             checkbox.addEventListener('click', function() {
-                console.log(checkbox);
+                console.log("click " + checkbox);
                 if(this.checked) {
                     change(this, true);
                 } else {
