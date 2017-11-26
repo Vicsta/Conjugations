@@ -141,23 +141,26 @@ $(function() {
         }
 
         function setAllCheck(checkbox) {
-            checkbox.addEventListener( 'change', function() {
+            checkbox.addEventListener('change', function() {
                 console.log(checkbox);
                 if(this.checked) {
                     var cur = this.nextSibling.nextSibling;
                     while(cur) {
                         cur.childNodes[0].checked = true;
-                        $(cur.childNodes[0]).trigger('change');
+                        $(cur.childNodes[0]).trigger('click');
                         cur = cur.nextSibling;
                     }
                 } else {
                     cur = this.nextSibling.nextSibling;
                     while(cur) {
                         cur.childNodes[0].checked = false;
-                        $(cur.childNodes[0]).trigger('change');
+                        $(cur.childNodes[0]).trigger('click');
                         cur = cur.nextSibling;
                     }
                 }
+            });
+            checkbox.addEventListener('click', function () {
+                console.log("testing " + this);
             });
         }
 
