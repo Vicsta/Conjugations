@@ -147,6 +147,7 @@ $(function() {
                     change(this, true);
                 } else {
                     change(this, false);
+                    upCasc(this);
                 }
             });
         }
@@ -157,6 +158,13 @@ $(function() {
                 cur.childNodes[0].checked = to;
                 change(cur.childNodes[0], to);
                 cur = cur.nextSibling;
+            }
+        }
+
+        function upCasc(checkbox) {
+            if(checkbox && (checkbox.type = "checkbox")) {
+                checkbox.parentNode.previousSibling.previousSibling.checked = false;
+                upCasc(checkbox.parentNode.previousSibling.previousSibling);
             }
         }
 
