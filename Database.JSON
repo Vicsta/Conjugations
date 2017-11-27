@@ -33,7 +33,7 @@
 				"Imperative": {
 				}
 			},
-			"Pronouns": ["Yo", "Tú/Usted", "Él/Ella", "Nosotros/Nosotras", "Vosotros/Vosotras", "Ustedes/Ellos/Ellas"]
+			"Pronouns": ["Yo", "Tú", "Vos", "Él/Ella/Usted", "Nosotros/Nosotras", "Vosotros/Vosotras", "Ellos/Ellas/Ustedes"]
 		},
 		"French": {
 			"Verbs": {
